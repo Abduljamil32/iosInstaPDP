@@ -14,6 +14,13 @@
 		11486D4E27FEF426001C89BE /* iosInsta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11486D4C27FEF426001C89BE /* iosInsta.xcdatamodeld */; };
 		11486D5027FEF427001C89BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11486D4F27FEF427001C89BE /* Assets.xcassets */; };
 		11486D5327FEF427001C89BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11486D5127FEF427001C89BE /* LaunchScreen.storyboard */; };
+		11486D5F27FEF477001C89BE /* SingInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11486D5D27FEF477001C89BE /* SingInViewController.swift */; };
+		11486D6027FEF477001C89BE /* SingInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11486D5E27FEF477001C89BE /* SingInViewController.xib */; };
+		11486D6327FEF488001C89BE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11486D6127FEF488001C89BE /* SignUpViewController.swift */; };
+		11486D6427FEF488001C89BE /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11486D6227FEF488001C89BE /* SignUpViewController.xib */; };
+		11486D6727FEF5E7001C89BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11486D6527FEF5E7001C89BE /* HomeViewController.swift */; };
+		11486D6827FEF5E7001C89BE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11486D6627FEF5E7001C89BE /* HomeViewController.xib */; };
+		11486D6A27FF1FD4001C89BE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11486D6927FF1FD4001C89BE /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		11486D4F27FEF427001C89BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11486D5227FEF427001C89BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11486D5427FEF427001C89BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11486D5D27FEF477001C89BE /* SingInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInViewController.swift; sourceTree = "<group>"; };
+		11486D5E27FEF477001C89BE /* SingInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingInViewController.xib; sourceTree = "<group>"; };
+		11486D6127FEF488001C89BE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		11486D6227FEF488001C89BE /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		11486D6527FEF5E7001C89BE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		11486D6627FEF5E7001C89BE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		11486D6927FF1FD4001C89BE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,39 @@
 		11486D4227FEF426001C89BE /* iosInsta */ = {
 			isa = PBXGroup;
 			children = (
+				11486D5B27FEF440001C89BE /* appFiles */,
+				11486D5A27FEF439001C89BE /* controllers */,
 				11486D4327FEF426001C89BE /* AppDelegate.swift */,
 				11486D4527FEF426001C89BE /* SceneDelegate.swift */,
-				11486D4727FEF426001C89BE /* ViewController.swift */,
-				11486D4927FEF426001C89BE /* Main.storyboard */,
 				11486D4F27FEF427001C89BE /* Assets.xcassets */,
-				11486D5127FEF427001C89BE /* LaunchScreen.storyboard */,
 				11486D5427FEF427001C89BE /* Info.plist */,
-				11486D4C27FEF426001C89BE /* iosInsta.xcdatamodeld */,
 			);
 			path = iosInsta;
+			sourceTree = "<group>";
+		};
+		11486D5A27FEF439001C89BE /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11486D6927FF1FD4001C89BE /* BaseViewController.swift */,
+				11486D5D27FEF477001C89BE /* SingInViewController.swift */,
+				11486D5E27FEF477001C89BE /* SingInViewController.xib */,
+				11486D6127FEF488001C89BE /* SignUpViewController.swift */,
+				11486D6227FEF488001C89BE /* SignUpViewController.xib */,
+				11486D6527FEF5E7001C89BE /* HomeViewController.swift */,
+				11486D6627FEF5E7001C89BE /* HomeViewController.xib */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		11486D5B27FEF440001C89BE /* appFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11486D4927FEF426001C89BE /* Main.storyboard */,
+				11486D4727FEF426001C89BE /* ViewController.swift */,
+				11486D5127FEF427001C89BE /* LaunchScreen.storyboard */,
+				11486D4C27FEF426001C89BE /* iosInsta.xcdatamodeld */,
+			);
+			path = appFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +165,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11486D6427FEF488001C89BE /* SignUpViewController.xib in Resources */,
+				11486D6027FEF477001C89BE /* SingInViewController.xib in Resources */,
 				11486D5327FEF427001C89BE /* LaunchScreen.storyboard in Resources */,
 				11486D5027FEF427001C89BE /* Assets.xcassets in Resources */,
 				11486D4B27FEF426001C89BE /* Main.storyboard in Resources */,
+				11486D6827FEF5E7001C89BE /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11486D6327FEF488001C89BE /* SignUpViewController.swift in Sources */,
 				11486D4827FEF426001C89BE /* ViewController.swift in Sources */,
+				11486D5F27FEF477001C89BE /* SingInViewController.swift in Sources */,
 				11486D4427FEF426001C89BE /* AppDelegate.swift in Sources */,
 				11486D4627FEF426001C89BE /* SceneDelegate.swift in Sources */,
+				11486D6A27FF1FD4001C89BE /* BaseViewController.swift in Sources */,
+				11486D6727FEF5E7001C89BE /* HomeViewController.swift in Sources */,
 				11486D4E27FEF426001C89BE /* iosInsta.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosInsta/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InstaPro;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosInsta/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InstaPro;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
